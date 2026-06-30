@@ -1,10 +1,10 @@
 import { Lock, Truck, RotateCcw, Headphones } from 'lucide-react';
 
 const badges = [
-  [Lock, 'Secure Checkout', '100% secure payments'],
-  [Truck, 'Fast Shipping', 'Worldwide delivery'],
-  [RotateCcw, '30-Day Returns', 'No hassle returns'],
-  [Headphones, 'Customer Support', "We're here for you"],
+  [Lock, 'Sichere Zahlung', 'Verschlüsselte Zahlungsabwicklung'],
+  [Truck, 'Schneller Versand', 'Kostenlos ab 50 € Bestellwert'],
+  [RotateCcw, '30 Tage Rückgabe', 'Einfach und kundenfreundlich'],
+  [Headphones, 'Kundenservice', 'Support bei Fragen zur Bestellung'],
 ];
 
 export default function TrustBadges() {

@@ -3,6 +3,8 @@ import Hero from '../components/Hero';
 import TrustBadges from '../components/TrustBadges';
 import Categories from '../components/Categories';
 import ProductGrid from '../components/ProductGrid';
+import Reviews from '../components/Reviews';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -15,13 +17,20 @@ export default function Home() {
       <ProductGrid />
 
       <section id="about" className="aboutPanel">
-        <h2>About FAST</h2>
+        <div>
+          <p className="sectionKicker">Über FAST</p>
+          <h2>Future Always Starts Today.</h2>
+        </div>
         <p>
-          FAST steht für Future Always Starts Today. Unser Ziel ist ein moderner
-          Shop für smarte Produkte, faire Preise und ein sicheres Einkaufserlebnis.
+          FAST steht für moderne Produkte, faire Preise und ein Einkaufserlebnis,
+          das schnell, übersichtlich und vertrauenswürdig wirkt. Unser Ziel ist
+          ein Shop, der nicht wie ein typischer Dropshipping-Shop aussieht,
+          sondern wie eine eigenständige Marke.
         </p>
       </section>
 
+      <Reviews />
+      <FAQ />
       <Footer />
     </main>
   );

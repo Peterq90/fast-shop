@@ -5,8 +5,11 @@ export default function ProductGrid() {
   return (
     <section id="shop" className="section">
       <div className="sectionTitle between">
-        <h2>Trending Now</h2>
-        <a href="#shop">View All →</a>
+        <div>
+          <p className="sectionKicker">Aktuelle Angebote</p>
+          <h2>Bestseller</h2>
+        </div>
+        <a href="#shop">Alle Produkte →</a>
       </div>
 
       <div className="productGrid">
@@ -21,13 +24,17 @@ export default function ProductGrid() {
               <h3>{product.name}</h3>
               <div className="rating">
                 <Star size={16} fill="currentColor" />
-                <span>{product.rating} ({product.reviews})</span>
+                <span>{product.rating} ({product.reviews} Bewertungen)</span>
               </div>
+              <p className="delivery">{product.delivery}</p>
               <div className="buyRow">
-                <strong>{product.price}</strong>
+                <div>
+                  <strong>{product.price}</strong>
+                  <small>{product.oldPrice}</small>
+                </div>
                 <button>
                   <ShoppingCart size={18} />
-                  Add
+                  In den Warenkorb
                 </button>
               </div>
             </div>

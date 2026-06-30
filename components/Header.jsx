@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <>
       <div className="topbar">
-        <span>🚚 Free shipping on orders over €50</span>
-        <span>💰 30-Day Money Back Guarantee</span>
-        <span>🎧 24/7 Customer Support</span>
+        <span>🚚 Kostenloser Versand ab 50 €</span>
+        <span>↩️ 30 Tage Rückgaberecht</span>
+        <span>🔒 Sicher bezahlen</span>
       </div>
 
       <header className="header">
@@ -16,11 +16,11 @@ export default function Header() {
         </div>
 
         <nav className="nav">
-          <a href="#home">Home</a>
+          <a href="#home">Startseite</a>
           <a href="#shop">Shop</a>
-          <a href="#categories">Categories</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#categories">Kategorien</a>
+          <a href="#bewertungen">Bewertungen</a>
+          <a href="#kontakt">Kontakt</a>
         </nav>
 
         <div className="headerIcons">

@@ -4,7 +4,8 @@ export default function Categories() {
   return (
     <section id="categories" className="section">
       <div className="sectionTitle">
-        <h2>Shop by Category</h2>
+        <p className="sectionKicker">Schnell finden</p>
+        <h2>Nach Kategorie shoppen</h2>
       </div>
       <div className="categoriesGrid">
         {categories.map(([icon, label]) => (

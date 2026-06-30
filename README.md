@@ -1,39 +1,21 @@
-# FAST – Premium Shop
+# FAST 2.0 – Deutsche Version
 
 FAST steht für **Future Always Starts Today.**
 
-## Lokal starten
+Diese Version ist auf Deutsch umgestellt und enthält:
+- deutsche Navigation,
+- deutsche Produkttexte,
+- deutsche Preise,
+- Bestseller-Bereich,
+- Trust-Badges,
+- Bewertungen,
+- FAQ,
+- Premium-Dark-Hero.
 
-```bash
-npm install
-npm run dev
-```
+## GitHub aktualisieren
 
-Dann im Browser öffnen:
-
-```text
-http://localhost:3000
-```
-
-## Online veröffentlichen
-
-Empfohlen:
-
-1. Neues GitHub-Repository erstellen.
-2. Projektdateien hochladen.
-3. Bei Vercel mit GitHub verbinden.
-4. Repository importieren.
-5. Deploy klicken.
-
-## Wichtig für echten Verkauf in Deutschland
-
-Vor echtem Verkauf brauchst du:
-- vollständiges Impressum,
-- Datenschutz,
-- Widerruf,
-- AGB,
-- Versandinformationen,
-- Zahlungsanbieter,
-- Gewerbeanmeldung, falls gewerblich verkauft wird.
-
-Die Produktdaten sind aktuell Demo-Daten.
+1. ZIP entpacken.
+2. In GitHub im Repository `fast-shop` auf **Add file → Upload files** klicken.
+3. Alle Dateien und Ordner aus diesem Paket hochladen.
+4. Unten auf **Commit changes** klicken.
+5. Vercel aktualisiert die Website automatisch.

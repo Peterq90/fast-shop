@@ -71,7 +71,7 @@ a {
 
 .nav {
   display: flex;
-  gap: 34px;
+  gap: 28px;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 13px;
@@ -89,7 +89,7 @@ a {
 }
 
 .hero {
-  min-height: 590px;
+  min-height: 610px;
   background:
     radial-gradient(circle at 73% 42%, rgba(22,119,255,0.55), rgba(22,119,255,0.12) 24%, rgba(0,0,0,0) 43%),
     linear-gradient(135deg, #000 0%, #070707 55%, #0e1830 100%);
@@ -101,11 +101,14 @@ a {
   padding: 60px 70px;
 }
 
-.eyebrow {
-  color: var(--blue-light);
+.eyebrow,
+.sectionKicker {
+  color: var(--blue);
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.14em;
+  font-size: 13px;
+  margin: 0 0 10px;
 }
 
 .hero h1 {
@@ -191,7 +194,7 @@ a {
   z-index: 3;
   bottom: 34px;
   right: 70px;
-  width: 230px;
+  width: 245px;
   padding: 18px;
   background: rgba(10,10,10,0.75);
   border: 1px solid var(--line);
@@ -242,8 +245,10 @@ a {
   font-size: 14px;
 }
 
-.section {
-  padding: 42px 70px;
+.section,
+.reviews,
+.faq {
+  padding: 44px 70px;
 }
 
 .sectionTitle {
@@ -253,15 +258,16 @@ a {
 .sectionTitle h2,
 .aboutPanel h2 {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 32px;
   margin: 0;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.045em;
 }
 
 .sectionTitle.between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  gap: 20px;
 }
 
 .sectionTitle a {
@@ -288,6 +294,7 @@ a {
   place-items: center;
   gap: 4px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 180ms ease;
 }
 
 .categoryCard:hover {
@@ -301,7 +308,7 @@ a {
 
 .productGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
@@ -314,7 +321,7 @@ a {
 }
 
 .productImage {
-  height: 210px;
+  height: 220px;
   background:
     radial-gradient(circle at 55% 35%, rgba(22,119,255,0.4), transparent 36%),
     linear-gradient(145deg, #070707, #1a1a1a);
@@ -366,15 +373,28 @@ a {
   font-size: 14px;
 }
 
+.delivery {
+  color: #696969;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
 .buyRow {
   margin-top: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 14px;
 }
 
 .buyRow strong {
-  font-size: 20px;
+  font-size: 22px;
+  display: block;
+}
+
+.buyRow small {
+  color: #8b8b8b;
+  text-decoration: line-through;
 }
 
 .buyRow button {
@@ -391,17 +411,70 @@ a {
 }
 
 .aboutPanel {
-  margin: 30px 70px 60px;
+  margin: 30px 70px 30px;
   border-radius: 24px;
   padding: 42px;
   background: #f7f7f7;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 30px;
+  align-items: center;
 }
 
 .aboutPanel p {
-  max-width: 780px;
   color: #575757;
   font-size: 18px;
   line-height: 1.7;
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.reviewCard {
+  border-radius: 22px;
+  padding: 26px;
+  background: #101010;
+  color: #fff;
+}
+
+.stars {
+  color: #f5a400;
+  margin-bottom: 14px;
+}
+
+.reviewCard p {
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+.faq {
+  background: #f7f7f7;
+}
+
+.faqList {
+  display: grid;
+  gap: 14px;
+  max-width: 980px;
+}
+
+details {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 22px;
+  border: 1px solid #e8e8e8;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+details p {
+  color: #606060;
+  line-height: 1.6;
 }
 
 .footer {
@@ -420,6 +493,10 @@ a {
 
 .footer p {
   color: #cfcfcf;
+}
+
+.footerSmall {
+  max-width: 400px;
 }
 
 .footerLinks {
@@ -468,7 +545,8 @@ a {
   }
 
   .trustBadges,
-  .productGrid {
+  .productGrid,
+  .reviewGrid {
     grid-template-columns: 1fr;
     margin-left: 20px;
     margin-right: 20px;
@@ -478,13 +556,16 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .section {
+  .section,
+  .reviews,
+  .faq {
     padding: 34px 24px;
   }
 
   .aboutPanel {
     margin: 24px;
     padding: 28px;
+    grid-template-columns: 1fr;
   }
 
   .footer {
