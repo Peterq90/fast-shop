@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="heroVisual" aria-label="FAST Produktvisual">
         <div className="speedBeam" />
         <div className="glowBall" />
-        <div className="heroProduct">🎧</div>
+        <img src="/hero.jpg" alt="FAST Premium Kopfhörer" className="heroProduct" />
         <div className="floatingCard">
           <strong>FAST DEAL</strong>
           <span>Trendprodukte. Faire Preise. Sicherer Einkauf.</span>
